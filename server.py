@@ -5,6 +5,7 @@ import data_manager
 app = Flask(__name__)
 
 
+@app.route('/')
 @app.route('/main')
 def main_page():
     return render_template('index.html')
